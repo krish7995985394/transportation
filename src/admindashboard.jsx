@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth, db } from './firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import AdminProfile from './admin/AdminProfile'; // Corrected Import Path
+import AdminProfile from './admin/AdminProfile.jsx'; // Corrected Import Path
 
 function AdminDashboard() {
   const [activePage, setActivePage] = useState('profile');
