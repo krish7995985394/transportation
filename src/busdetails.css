@@ -1,0 +1,22 @@
+.bus-details {
+  padding: 20px;
+}
+
+.bus-details h2 {
+  margin-bottom: 20px;
+}
+
+.bus-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bus-details th, .bus-details td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.bus-details th {
+  background-color: #f2f2f2;
+}

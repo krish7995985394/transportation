@@ -1,0 +1,18 @@
+.payment-page {
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.methods {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

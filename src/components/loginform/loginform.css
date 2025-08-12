@@ -1,0 +1,109 @@
+/* Reset and base layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+/* Top bar and logo styling */
+.top-bar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.top-logo {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Main container for login forms */
+.login-forms-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Login box shared for both Admin and Student */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Headings inside each login box */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Form control styling */
+.form-control {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+.black-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.black-button:hover {
+  background-color: #333;
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* Background with blur using ::before */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+ 
+  filter: blur(6px);
+  z-index: -1;
+}
